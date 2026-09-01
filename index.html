@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ștefan-Horea Nistea | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigație -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.jpg" alt="SN Logo" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav_about">Despre</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Experiență</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Proiecte</a></li>
+                <li><a href="hobbies.html" data-i18n="nav_hobbies">Hobbies & Diverse</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            
+            <div class="lang-switch">
+                <button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Secțiunea Hero / Despre -->
+	<section id="hero" class="container hero-section">
+		<div class="hero-avatar">
+			<!-- Asigură-te că numele fișierului se potrivește cu imaginea ta (ex: profile.jpg sau avatar.jpg) -->
+			<img src="profile.png" alt="Ștefan-Horea Nistea" class="profile-img">
+		</div>
+		<div class="hero-content">
+			<h1 data-i18n="hero_name">Ștefan-Horea Nistea</h1>
+			<h2 class="subtitle" data-i18n="hero_subtitle">Electronics & Systems Engineer</h2>
+			<p class="hero-desc" data-i18n="hero_desc">
+				Inginer cu peste 5 ani de experiență tehnică în dezvoltare și control software. Specializat în crearea de soluții robuste și de impact, combinând cunoștințele teoretice de electrotehnică cu o abordare practică și testare automatizată.
+			</p>
+			<div class="hero-buttons">
+				<a href="#contact" class="btn primary" data-i18n="btn_contact">Contactează-mă</a>
+				<a href="#projects" class="btn secondary" data-i18n="btn_projects">Vezi Proiecte</a>
+			</div>
+		</div>
+	</section>
+
+    <!-- Secțiunea Experiență -->
+    <section id="experience" class="container">
+        <h2 class="section-title" data-i18n="title_experience">Experiență Profesională</h2>
+        
+        <div class="timeline-wrapper">
+            
+            <!-- Container Porsche Engineering -->
+            <div class="cv-card highlight group-card">
+                <div class="company-group-header">
+                    <i class="fas fa-building company-icon"></i>
+                    <h3 class="company-group-title" data-i18n="company_porsche">Porsche Engineering Romania</h3>
+                </div>
+
+                <div class="group-roles">
+                    
+                    <!-- Rol 1: Integration Engineer -->
+                    <div class="role-block">
+                        <div class="card-header">
+                            <div>
+                                <h4 class="role" data-i18n="role_integration">System Integration Engineer</h4>
+                            </div>
+                            <span class="period" data-i18n="period_integration">2026 - Prezent</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="clean-list">
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="integ_task_1">Suport tehnic de specialitate și colaborare activă în cadrul proiectelor internaționale.</span>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="integ_task_2">Analiza, diagnosticarea și soluționarea problemelor complexe la nivel de sistem.</span>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="integ_task_3">Verificarea și optimizarea integrării end-to-end între subsistemele software și hardware.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extindere rol -->
+                    <div class="internal-progression">
+                        <div class="progression-line"></div>
+                        <span class="progression-badge"><i class="fas fa-level-up-alt"></i> <span data-i18n="badge_expansion">Extindere Rol</span></span>
+                        <div class="progression-line"></div>
+                    </div>
+
+                    <!-- Software Engineer -->
+                    <div class="role-block">
+                        <div class="card-header">
+                            <div>
+                                <h4 class="role" data-i18n="role_software">Software Engineer</h4>
+                            </div>
+                            <span class="period" data-i18n="period_software">Iun 2021 - 2026</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="clean-list">
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="sw_task_1">Dezvoltare, implementare și evaluare de noi tehnologii software.</span>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="sw_task_2">Proiectare și dezvoltare de componente software model-based folosind <strong>Matlab / Simulink / Stateflow</strong>.</span>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="sw_task_3">Implementare software (scaling, generare de cod, validare) și automatizarea testării pentru optimizarea eficienței.</span>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="sw_task_4">Gestionare eficientă a versiunilor de cod prin <strong>GIT / SVN</strong>.</span>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fas fa-chevron-right icon"></i>
+                                    <span data-i18n="sw_task_5">Colaborare în echipe Agile, utilizând <strong>JIRA</strong> și <strong>Confluence</strong> pentru monitorizarea progresului.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promovare -->
+                    <div class="internal-progression">
+                        <div class="progression-line"></div>
+                        <span class="progression-badge"><i class="fas fa-level-up-alt"></i> <span data-i18n="badge_promotion">Promovare</span></span>
+                        <div class="progression-line"></div>
+                    </div>
+
+                    <!-- Working Student -->
+                    <div class="role-block">
+                        <div class="card-header">
+                            <div>
+                                <h4 class="role" data-i18n="role_student">Working Student</h4>
+                            </div>
+                            <span class="period" data-i18n="period_student">Mar 2021 - Iun 2021</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="description" data-i18n="desc_student">Participare la programul de internship "Model-Based Academy".</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Conector Săgeată -->
+            <div class="timeline-connector">
+                <div class="connector-line"></div>
+                <div class="connector-node"><i class="fas fa-arrow-up"></i></div>
+                <div class="connector-line"></div>
+            </div>
+
+            <!-- Container CRISOFT -->
+            <div class="cv-card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="role" data-i18n="role_analyst">Assistant Analyst</h3>
+                        <h4 class="company" data-i18n="company_crisoft">CRISOFT</h4>
+                    </div>
+                    <span class="period" data-i18n="period_analyst">Nov 2019 - Mai 2020</span>
+                </div>
+                <div class="card-body">
+                    <p class="description" data-i18n="desc_crisoft">Responsabilități de administrare sistem: rețelistică, management de mașini virtuale (VM), Continuous Integration și automatizarea sarcinilor.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Secțiunea Educație -->
+    <section id="education" class="container">
+        <h2 class="section-title" data-i18n="title_education">Educație</h2>
+        <div class="cards-wrapper">
+            <div class="cv-card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="role" data-i18n="edu_degree">Diplomă de Licență</h3>
+                        <h4 class="company" data-i18n="edu_univ">Universitatea Tehnică din Cluj-Napoca</h4>
+                    </div>
+                    <span class="period">2016 - 2020</span>
+                </div>
+                <div class="card-body">
+                    <p class="description" data-i18n="edu_desc">
+                        Facultatea de Electronică, Telecomunicații și Tehnologia Informației<br>Specializarea: Tehnologii și Sisteme de Telecomunicații
+                    </p>
+                </div>
+            </div>
+
+            <div class="cv-card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="role" data-i18n="edu_hs">Liceu</h3>
+                        <h4 class="company" data-i18n="edu_hs_name">Colegiul Național "Titu Maiorescu" Aiud</h4>
+                    </div>
+                    <span class="period">2010 - 2014</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Proiecte -->
+    <section id="projects" class="container">
+        <h2 class="section-title">
+            <span data-i18n="title_projects">Proiecte Personale</span> 
+            <span class="subtitle-note" data-i18n="subtitle_projects">that I am proud of</span>
+        </h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Kivy ED App</h3>
+                    <span class="project-tag">Python / Android / Windows</span>
+                </div>
+                <p data-i18n="proj_kivy_desc">Aplicație Python multi-platformă, compatibilă pe Windows și Android, capabilă să cripteze și să decripteze textul utilizatorului folosind algoritmul AES256.</p>
+                <a href="https://github.com/Stefan-Nistea/EDapp" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> <span data-i18n="btn_github">Vezi Repo GitHub</span>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 data-i18n="proj_thesis_title">Lucrare de Licență</h3>
+                    <span class="project-tag">Cybersecurity / Automation</span>
+                </div>
+                <p data-i18n="proj_thesis_desc">Generarea automată de mașini virtuale cu vulnerabilități în securitatea cibernetică.</p>
+                <span class="institution-tag">
+                    <i class="fas fa-university"></i> <span data-i18n="edu_univ">Universitatea Tehnică din Cluj-Napoca</span>
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Secțiunea Contact -->
+	<section id="contact" class="container">
+		<h2 class="section-title" data-i18n="title_contact">Contact</h2>
+		
+		<div class="contact-grid">
+			<!-- Coloana Stânga: Social Links -->
+			<div class="contact-column">
+				<!-- Stânga sus: LinkedIn -->
+				<a href="https://linkedin.com" target="_blank" class="contact-card">
+					<i class="fab fa-linkedin contact-icon"></i>
+					<span>LinkedIn</span>
+				</a>
+				
+				<!-- Stânga jos: GitHub -->
+				<a href="https://github.com/Stefan-Nistea" target="_blank" class="contact-card">
+					<i class="fab fa-github contact-icon"></i>
+					<span>GitHub</span>
+				</a>
+			</div>
+
+			<!-- Coloana Dreapta: Date Protejate -->
+			<div class="contact-column">
+				<!-- Dreapta sus: Telefon -->
+				<div class="contact-card">
+					<i class="fas fa-phone contact-icon"></i>
+					<span id="phone-container" class="protected-link" data-p1="+40" data-p2="748" data-p3="279" data-p4="230">
+						<button onclick="revealPhone(this)" class="btn-reveal" data-i18n="btn_reveal_phone">Afișează telefon</button>
+					</span>
+				</div>
+
+				<!-- Dreapta jos: Email -->
+				<div class="contact-card">
+					<i class="fas fa-envelope contact-icon"></i>
+					<span id="email-container" class="protected-link" data-u="stefannistea" data-d="outlook.com">
+						<button onclick="revealEmail(this)" class="btn-reveal" data-i18n="btn_reveal_email">Afișează email</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <footer>
+        <p data-i18n="footer_text">© 2026 Ștefan-Horea Nistea. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
