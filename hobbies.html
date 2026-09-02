@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies & Diverse | Ștefan-Horea Nistea</title>
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="style.hobbies.css">
+    <link rel="stylesheet" href="style.hobbies.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -31,110 +31,112 @@
         </nav>
     </header>
 
-    <section class="container page-header">
-        <h1 data-i18n="hobbies_header_title">Hobbies & Pasiuni Personale</h1>
-        <p class="hero-desc" data-i18n="hobbies_header_desc">
-            Proiecte creative, activități de timp liber, implicare comunitară și inițiative din afara domeniului profesional.
-        </p>
-    </section>
-    
-    <!-- Carte/Publicație -->
-    <section class="container hobby-section">
-        <h2 class="section-title" data-i18n="title_writing">Activitate Editorială</h2>
-        <div class="book-card">
-            <div>
-                <span class="badge" data-i18n="book_badge">Roman Science-Fiction</span>
-                <h3 class="book-title" data-i18n="book_title">Dacă am fi știut</h3>
-            </div>
-            <p class="book-desc" data-i18n="book_desc">
-                O explorare narativă intensă a viitorului, combinând speculația tehnologică cu dinamica relațiilor umane. Cartea urmărește mize complexe de supraviețuire și decizii critice într-un univers construit cu atenție la detaliu.
+    <main class="container">
+        <section class="page-header">
+            <h1 data-i18n="hobbies_header_title">Hobbies & Pasiuni Personale</h1>
+            <p data-i18n="hobbies_header_desc">
+                Proiecte creative, activități de timp liber, implicare comunitară și inițiative din afara domeniului profesional.
             </p>
-            <div class="book-action">
-                <a href="https://play.google.com/store/books/details?id=n9xpEQAAQBAJ" target="_blank" class="btn secondary">
-                    <i class="fab fa-google-play"></i> <span data-i18n="btn_google_play">Google Play Books</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Secțiunea Implicare Comunitară & Voluntariat -->
-    <section class="container hobby-section">
-        <h2 class="section-title" data-i18n="title_volunteering">Voluntariat & Implicare Comunitară</h2>
-        <div class="volunteering-grid">
-            
-            <div class="volunteer-card">
-                <div class="volunteer-header">
-                    <div class="volunteer-title">Trascău Trail Run</div>
-                    <span class="project-tag" data-i18n="vol_tag_sports">Evenimente Sportive / Montan</span>
+        </section>
+        
+        <!-- Editorial / Carte -->
+        <section class="hobby-section">
+            <h2 class="section-title" data-i18n="title_writing">Activitate Editorială</h2>
+            <div class="hobby-book-card">
+                <div>
+                    <span class="hobby-book-badge" data-i18n="book_badge">Roman Science-Fiction</span>
+                    <div class="hobby-book-title" data-i18n="book_title">Dacă am fi știut</div>
                 </div>
-                <p class="volunteer-desc" data-i18n="vol_trascau_desc">Implicare activă pe parcursul mai multor ediții în organizarea și logistica competiției de alergare montană din Munții Trascău (Rimetea).</p>
-            </div>
-
-            <div class="volunteer-card">
-                <div class="volunteer-header">
-                    <div class="volunteer-title">Electric Castle</div>
-                    <span class="project-tag" data-i18n="vol_tag_festival">Festival de Muzică & Cultură</span>
+                <p class="hobby-book-desc" data-i18n="book_desc">
+                    O explorare narativă intensă a viitorului, combinând speculația tehnologică cu dinamica relațiilor umane. Cartea urmărește mize complexe de supraviețuire și decizii critice într-un univers construit cu atenție la detaliu.
+                </p>
+                <div>
+                    <a href="https://play.google.com/store/books/details?id=n9xpEQAAQBAJ" target="_blank" class="hobby-store-btn">
+                        <i class="fab fa-google-play"></i> <span data-i18n="btn_google_play">Google Play Books</span>
+                    </a>
                 </div>
-                <p class="volunteer-desc" data-i18n="vol_ec_desc">Voluntariat în cadrul unuia dintre cele mai mari festivaluri din România, sprijinind suportul logistic și experiența participanților la Castelul Bánffy.</p>
             </div>
+        </section>
 
-            <div class="volunteer-card">
-                <div class="volunteer-header">
-                    <div class="volunteer-title">TIFF</div>
-                    <span class="project-tag" data-i18n="vol_tag_film">Festival de Film</span>
+        <!-- Voluntariat -->
+        <section class="hobby-section">
+            <h2 class="section-title" data-i18n="title_volunteering">Voluntariat & Implicare Comunitară</h2>
+            <div class="hobby-grid">
+                
+                <div class="hobby-card">
+                    <div>
+                        <div class="hobby-card-title">Trascău Trail Run</div>
+                        <span class="hobby-tag" data-i18n="vol_tag_sports">Evenimente Sportive / Montan</span>
+                    </div>
+                    <p class="hobby-card-text" data-i18n="vol_trascau_desc">Implicare activă pe parcursul mai multor ediții în organizarea și logistica competiției de alergare montană din Munții Trascău (Rimetea).</p>
                 </div>
-                <p class="volunteer-desc" data-i18n="vol_tiff_desc">Sprijin operațional și logistic pentru desfășurarea celui mai important eveniment cinematografic din România.</p>
-            </div>
 
-            <div class="volunteer-card">
-                <div class="volunteer-header">
-                    <div class="volunteer-title">Jazz in the Park</div>
-                    <span class="project-tag" data-i18n="vol_tag_music">Festival de Muzică</span>
+                <div class="hobby-card">
+                    <div>
+                        <div class="hobby-card-title">Electric Castle</div>
+                        <span class="hobby-tag" data-i18n="vol_tag_festival">Festival de Muzică & Cultură</span>
+                    </div>
+                    <p class="hobby-card-text" data-i18n="vol_ec_desc">Voluntariat în cadrul unuia dintre cele mai mari festivaluri din România, sprijinind suportul logistic și experiența participanților la Castelul Bánffy.</p>
                 </div>
-                <p class="volunteer-desc" data-i18n="vol_jazz_desc">Voluntariat în organizarea festivalului care aduce muzica de jazz și activitățile comunitare în spațiile verzi din Cluj-Napoca.</p>
-            </div>
 
-            <div class="volunteer-card">
-                <div class="volunteer-header">
-                    <div class="volunteer-title">Transilvania History Days</div>
-                    <span class="project-tag" data-i18n="vol_tag_history">Festival Istoric & Cultural</span>
+                <div class="hobby-card">
+                    <div>
+                        <div class="hobby-card-title">TIFF</div>
+                        <span class="hobby-tag" data-i18n="vol_tag_film">Festival de Film</span>
+                    </div>
+                    <p class="hobby-card-text" data-i18n="vol_tiff_desc">Sprijin operațional și logistic pentru desfășurarea celui mai important eveniment cinematografic din România.</p>
                 </div>
-                <p class="volunteer-desc" data-i18n="vol_thd_desc">Implicare în activitățile logistice și de organizare a festivalului dedicat reconstituirii istorice și patrimoniului cultural.</p>
-            </div>
-            
-            <div class="volunteer-card">
-                <div class="volunteer-header">
-                    <div class="volunteer-title">Rimetea Climbing Open</div>
-                    <span class="project-tag" data-i18n="vol_tag_climbing">Festival de Escaladă & Outdoor</span>
+
+                <div class="hobby-card">
+                    <div>
+                        <div class="hobby-card-title">Jazz in the Park</div>
+                        <span class="hobby-tag" data-i18n="vol_tag_music">Festival de Muzică</span>
+                    </div>
+                    <p class="hobby-card-text" data-i18n="vol_jazz_desc">Voluntariat în organizarea festivalului care aduce muzica de jazz și activitățile comunitare în spațiile verzi din Cluj-Napoca.</p>
                 </div>
-                <p class="volunteer-desc" data-i18n="vol_rco_desc">Implicare în suportul logistic, organizarea și desfășurarea evenimentului dedicat comunității de escaladă și sporturi montane din zona Rimetea.</p>
+
+                <div class="hobby-card">
+                    <div>
+                        <div class="hobby-card-title">Transilvania History Days</div>
+                        <span class="hobby-tag" data-i18n="vol_tag_history">Festival Istoric & Cultural</span>
+                    </div>
+                    <p class="hobby-card-text" data-i18n="vol_thd_desc">Implicare în activitățile logistice și de organizare a festivalului dedicat reconstituirii istorice și patrimoniului cultural.</p>
+                </div>
+
+                <div class="hobby-card">
+                    <div>
+                        <div class="hobby-card-title">Rimetea Climbing Open</div>
+                        <span class="hobby-tag" data-i18n="vol_tag_climbing">Festival de Escaladă & Outdoor</span>
+                    </div>
+                    <p class="hobby-card-text" data-i18n="vol_rco_desc">Implicare în suportul logistic, organizarea și desfășurarea evenimentului dedicat comunității de escaladă și sporturi montane din zona Rimetea.</p>
+                </div>
+
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Inițiative -->
+        <section class="hobby-section">
+            <h2 class="section-title" data-i18n="title_initiatives">Pasiuni & Alte Inițiative</h2>
+            <div class="hobby-grid">
+                
+                <div class="hobby-card">
+                    <div class="hobby-card-title" data-i18n="init_trans_title">Traducere & Editare Literară</div>
+                    <p class="hobby-card-text" data-i18n="init_trans_desc">Muncă continuă de traducere și adaptare a textelor Science-Fiction, menținând rigurozitatea terminologică și nuanțele stilistice pentru publicul internațional.</p>
+                </div>
 
-    <!-- Diverse Inițiative -->
-    <section class="container hobby-section">
-        <h2 class="section-title" data-i18n="title_initiatives">Pasiuni & Alte Inițiative</h2>
-        <div class="cards-grid">
-            
-            <div class="card">
-                <h3 data-i18n="init_trans_title" style="color: var(--text-primary); margin-bottom: 0.8rem;">Traducere & Editare Literară</h3>
-                <p data-i18n="init_trans_desc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Muncă continuă de traducere și adaptare a textelor Science-Fiction, menținând rigurozitatea terminologică și nuanțele stilistice pentru publicul internațional.</p>
+                <div class="hobby-card">
+                    <div class="hobby-card-title" data-i18n="init_elec_title">Sisteme Electrice & Smart Home</div>
+                    <p class="hobby-card-text" data-i18n="init_elec_desc">Pasiune practică pentru proiectarea instalațiilor electrice rezidențiale, certificări tehnice și automatizarea locuinței prin soluții inteligente.</p>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-card-title" data-i18n="init_game_title">Strategie & Gaming</div>
+                    <p class="hobby-card-text" data-i18n="init_game_desc">Analiză de mecanică de joc, tactici de apărare și cooperare în jocuri de strategie multiplayer.</p>
+                </div>
+
             </div>
-
-            <div class="card">
-                <h3 data-i18n="init_elec_title" style="color: var(--text-primary); margin-bottom: 0.8rem;">Sisteme Electrice & Smart Home</h3>
-                <p data-i18n="init_elec_desc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Pasiune practică pentru proiectarea instalațiilor electrice rezidențiale, certificări tehnice și automatizarea locuinței prin soluții inteligente.</p>
-            </div>
-
-            <div class="card">
-                <h3 data-i18n="init_game_title" style="color: var(--text-primary); margin-bottom: 0.8rem;">Strategie & Gaming</h3>
-                <p data-i18n="init_game_desc" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Analiză de mecanică de joc, tactici de apărare și cooperare în jocuri de strategie multiplayer.</p>
-            </div>
-
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p data-i18n="footer_text">© 2026 Ștefan-Horea Nistea. Toate drepturile rezervate.</p>

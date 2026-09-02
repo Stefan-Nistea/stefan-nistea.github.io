@@ -1,8 +1,11 @@
 :root {
     --bg-color: #0f172a;
     --card-bg: #1e293b;
+    --card-border: #334155;
+
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
+
     --accent: #38bdf8;
     --accent-hover: #0284c7;
 }
@@ -108,7 +111,7 @@ nav.container {
 .lang-btn.active,
 .lang-btn:hover {
     background-color: var(--accent);
-    color: #0f172a;
+    color: var(--bg-color);
 }
 
 .btn {
@@ -121,7 +124,7 @@ nav.container {
 
 .btn.primary {
     background-color: var(--accent);
-    color: #0f172a;
+    color: var(--bg-color);
 }
 
 .btn.primary:hover {
@@ -156,7 +159,7 @@ footer {
     text-align: center;
     padding: 2rem;
     color: var(--text-secondary);
-    border-top: 1px solid #334155;
+    border-top: 1px solid var(--card-border);
     margin-top: 2rem;
 }
 

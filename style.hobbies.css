@@ -1,0 +1,119 @@
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.hobby-section {
+    margin-bottom: 3.5rem;
+}
+
+.hobby-book-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-book-badge {
+    display: inline-block;
+    background-color: rgba(56, 189, 248, 0.1); 
+    color: var(--accent);         
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.hobby-book-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.hobby-book-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.hobby-store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: fit-content;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.hobby-store-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-color);
+}
+
+/* Grid fixat pe 2 coloane */
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.hobby-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.hobby-card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.hobby-tag {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 0.3rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background-color: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    font-size: 0.75rem;
+}
+
+.hobby-card-text {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+}
