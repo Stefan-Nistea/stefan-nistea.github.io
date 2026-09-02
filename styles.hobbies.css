@@ -1,0 +1,103 @@
+/* Styling specific pentru pagina Hobbies & Proiecte Viitoare */
+.page-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.hobby-section {
+    margin-bottom: 3.5rem;
+}
+
+.hobby-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--card-bg);
+    padding-bottom: 0.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.8rem;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+
+/* Card Carte SF */
+.book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid var(--accent);
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #0f172a;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.book-info h2 {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+/* Timeline Proiecte Viitoare */
+.timeline-future {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.future-item {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.status-tag.in-progress {
+    background-color: #f59e0b;
+    color: #0f172a;
+}
+
+.status-tag.planned {
+    background-color: #64748b;
+    color: #ffffff;
+}

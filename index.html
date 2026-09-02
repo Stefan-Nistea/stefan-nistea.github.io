@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ștefan-Horea Nistea | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="style.index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Header / Navigație -->
-    <header>
-        <nav class="container">
-            <a href="index.html" class="logo-link">
-                <img src="logo.jpg" alt="SN Logo" class="nav-logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#Stefan" data-i18n="nav_about">Despre</a></li>
-                <li><a href="#experience" data-i18n="nav_experience">Experiență</a></li>
-                <li><a href="#projects" data-i18n="nav_projects">Proiecte</a></li>
-                <li><a href="hobbies.html" data-i18n="nav_hobbies">Hobbies & Diverse</a></li>
-                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-            </ul>
-            
-            <div class="lang-switch">
-                <button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
-                <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
-            </div>
-        </nav>
-    </header>
+	<header>
+		<nav class="container">
+			<a href="index.html" class="logo-link">
+				<img src="logo.jpg" alt="SN Logo" class="nav-logo">
+			</a>
+
+			<div class="nav-menu" id="nav-menu">
+				<ul class="nav-links">
+					<li><a href="index.html" data-i18n="nav_about">Despre</a></li>
+					<li><a href="index.html#experience" data-i18n="nav_experience">Experiență</a></li>
+					<li><a href="index.html#projects" data-i18n="nav_projects">Proiecte</a></li>
+					<li><a href="hobbies.html" data-i18n="nav_hobbies">Hobbies & Diverse</a></li>
+					<li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="lang-switch">
+				<button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
+				<button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+			</div>
+		</nav>
+	</header>
 
     <!-- Secțiunea principala / Despre -->
 	<section id="hero" class="container hero-section">
@@ -41,6 +45,11 @@
 			<p class="hero-desc" data-i18n="hero_desc">
 				Inginer cu peste 5 ani de experiență tehnică în dezvoltare și control software. Specializat în crearea de soluții robuste și de impact, combinând cunoștințele teoretice de electrotehnică cu o abordare practică și testare automatizată.
 			</p>
+			
+			<div class="languages-badge">
+				<p><i class="fas fa-language"></i> <span data-i18n="lang_ro">Română: Nativ</span> | <span data-i18n="lang_en">Engleză: C1</span></p>
+			</div>
+			
 			<div class="hero-buttons">
 				<a href="#contact" class="btn primary" data-i18n="btn_contact">Contactează-mă</a>
 				<a href="#projects" class="btn secondary" data-i18n="btn_projects">Vezi Proiecte</a>

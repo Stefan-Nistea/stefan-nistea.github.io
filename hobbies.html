@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies & Diverse | Ștefan-Horea Nistea</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="style.hobbies.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Header / Navigație -->
-    <header>
-        <nav class="container">
-            <a href="index.html" class="logo-link">
-                <img src="logo.jpg" alt="SN Logo" class="nav-logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html#hero" data-i18n="nav_about">Despre</a></li>
-                <li><a href="index.html#experience" data-i18n="nav_experience">Experiență</a></li>
-                <li><a href="index.html#projects" data-i18n="nav_projects">Proiecte</a></li>
-                <li><a href="hobbies.html" class="active" data-i18n="nav_hobbies">Hobbies & Diverse</a></li>
-                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
-            </ul>
+	<header>
+		<nav class="container">
+			<a href="index.html" class="logo-link">
+				<img src="logo.jpg" alt="SN Logo" class="nav-logo">
+			</a>
 
-            <div class="lang-switch">
-                <button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
-                <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
-            </div>
-        </nav>
-    </header>
+			<div class="nav-menu" id="nav-menu">
+				<ul class="nav-links">
+					<li><a href="index.html" data-i18n="nav_about">Despre</a></li>
+					<li><a href="index.html#experience" data-i18n="nav_experience">Experiență</a></li>
+					<li><a href="index.html#projects" data-i18n="nav_projects">Proiecte</a></li>
+					<li><a href="hobbies.html" data-i18n="nav_hobbies">Hobbies & Diverse</a></li>
+					<li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="lang-switch">
+				<button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
+				<button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+			</div>
+		</nav>
+	</header>
 
     <!-- Header Secțiune Hobbies -->
     <section class="container hero-section">
