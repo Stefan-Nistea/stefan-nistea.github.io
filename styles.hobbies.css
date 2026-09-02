@@ -1,4 +1,3 @@
-/* Styling specific pentru pagina Hobbies & Proiecte Viitoare */
 .page-header {
     text-align: center;
     padding: 3rem 0 2rem;
@@ -29,7 +28,6 @@
     border-color: var(--accent);
 }
 
-/* Card Carte SF */
 .book-card {
     display: flex;
     flex-direction: column;
@@ -66,6 +64,64 @@
     font-size: 2rem;
     color: var(--accent);
     margin-bottom: 1rem;
+}
+
+/* Structură Box-uri Voluntariat */
+.volunteering-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.volunteer-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    border-left: 4px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.volunteer-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+
+.volunteer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+}
+
+.volunteer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.volunteer-role {
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-top: 0.2rem;
+}
+
+.volunteer-period {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.volunteer-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 /* Timeline Proiecte Viitoare */
