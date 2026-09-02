@@ -1,0 +1,208 @@
+.book-detail-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.book-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book-cover-placeholder {
+    width: 100%;
+    height: 380px;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px dashed var(--accent);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-primary);
+}
+
+.book-cover-placeholder i {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.book-buttons-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Stil butoane identic cu secțiunea de contact */
+.book-btn-card {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.book-btn-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.book-btn-card .contact-icon {
+    font-size: 1.25rem;
+    color: var(--accent);
+}
+
+.book-info-section h3 {
+    color: var(--accent);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Lista de personaje pe 2 coloane pe desktop */
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem 1.5rem;
+    margin-left: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Fix e-mail afișat */
+#email-container a {
+    color: var(--text-primary) !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+#email-container a:hover {
+    color: var(--accent) !important;
+}
+
+.btn-reveal-custom {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.email-reveal-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    width: auto;
+    padding: 0.8rem 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.email-reveal-card:hover .btn-reveal-custom {
+    color: var(--accent);
+}
+
+.official-verification-box {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    background-color: rgba(56, 189, 248, 0.05);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.characters-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.char-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    border-radius: 20px; /* Colțuri rotunjite tip badge */
+    padding: 0.5rem 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.char-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    background-color: rgba(56, 189, 248, 0.08);
+}
+
+.char-card.highlight {
+    border-color: var(--accent);
+    background-color: rgba(56, 189, 248, 0.1);
+}
+
+.char-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.88rem;
+    white-space: nowrap;
+}
+
+.char-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1;
+}
+
+/* Separator între nume și descriere */
+.char-card.highlight .char-name::after {
+    content: "•";
+    margin-left: 0.4rem;
+    color: var(--accent);
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .book-detail-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .book-cover-placeholder {
+        height: 250px;
+    }
+    .character-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+

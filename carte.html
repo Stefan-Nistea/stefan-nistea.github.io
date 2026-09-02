@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacă am fi știut — Pagina Oficială a Cărții | Ștefan Nistea</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="carte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.jpg" alt="SN Logo" class="nav-logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_about">Despre</a></li>
+                <li><a href="index.html#experience" data-i18n="nav_experience">Experiență</a></li>
+                <li><a href="index.html#projects" data-i18n="nav_projects">Proiecte</a></li>
+                <li><a href="hobbies.html" data-i18n="nav_hobbies">Hobbies & Diverse</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="lang-switch">
+                <button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <span class="hobby-book-badge" data-i18n="book_official_badge">Pagina Oficială a Autorului</span>
+            <h1 style="margin-top: 0.5rem;" data-i18n="book_title">Dacă am fi știut</h1>
+            <p><span data-i18n="book_by">de</span> <strong>Ștefan Nistea</strong></p>
+        </section>
+
+        <section class="book-detail-wrapper">
+            <!-- Stânga: Placeholder Copertă + Butoane ca pe LinkedIn / GitHub -->
+            <div class="book-sidebar">
+                <div class="book-cover-placeholder">
+                    <i class="fas fa-book-journal-whills"></i>
+                    <strong style="font-size: 1.1rem; color: var(--accent);" data-i18n="book_title">Dacă am fi știut</strong>
+                    <span style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Ștefan Nistea</span>
+                    <span style="font-size: 0.75rem; margin-top: 1.5rem; color: var(--text-secondary);" data-i18n="book_cover_updating">(Copertă în curs de actualizare)</span>
+                </div>
+                
+                <div class="book-buttons-group">
+                    <a href="https://play.google.com/store/books/details?id=n9xpEQAAQBAJ" target="_blank" class="book-btn-card">
+                        <i class="fab fa-google-play contact-icon"></i>
+                        <span data-i18n="btn_google_play">Google Play Books</span>
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/240494464-dac-am-fi-tiut?from_search=true&from_srp=true&qid=RyHrVO5HR8&rank=1" target="_blank" class="book-btn-card">
+                        <i class="fab fa-goodreads contact-icon"></i>
+                        <span>Goodreads</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dreapta: Informații complete -->
+            <div class="book-info-section">
+				<h2 data-i18n="book_about_title">Despre Roman</h2>
+				<p class="hobby-book-desc" data-i18n="book_synopsis_main">
+					O explorare narativă intensă a viitorului, combinând speculația tehnologică cu dinamica relațiilor umane. Cartea urmărește mize complexe de supraviețuire și decizii critice într-un univers construit cu atenție la detaliu.
+				</p>
+				<p class="hobby-book-desc" data-i18n="book_synopsis_google">
+					Când Jack Umblat dispare de pe Terra, ajunge prins între două civilizaţii aflate în pragul unui conflict total, într-un univers unde adevărul este fragmentat și manipulat politic. Miza majoră a înfruntării nu este doar tehnologică, ci biologică: un patogen artificial provenit dintr-o societate uitată și răvășită de război amenință echilibrul lumii întregi.
+				</p>
+
+				<!-- Detalii de Publicare & Drepturi de Autor -->
+				<h3 data-i18n="book_details_title">Detalii de Publicare & Drepturi de Autor</h3>
+				<div class="hobby-book-desc" style="font-size: 0.9rem; line-height: 1.8; margin-bottom: 2rem;">
+					• <strong data-i18n="meta_title_label">Titlu:</strong> <span data-i18n="book_title">Dacă am fi știut</span><br>
+					• <strong data-i18n="meta_author_label">Autor:</strong> <span>Ștefan Nistea</span><br>
+					• <strong data-i18n="meta_publisher_label">Editură / Publicat de:</strong> <span>Ștefan Nistea</span><br>
+					• <strong data-i18n="meta_pubdate_label">Data publicării:</strong> <span>4 Iulie 2025</span><br>
+					• <strong data-i18n="meta_isbn_label">ISBN:</strong> <span>9789730420784</span><br>
+					• <strong data-i18n="meta_length_label">Volum:</strong> <span>487 <span data-i18n="unit_pages">pagini</span> (~133.407 <span data-i18n="unit_words">cuvinte</span>)</span><br>
+					• <strong data-i18n="meta_genre_label">Gen:</strong> <span data-i18n="meta_genre_val">Science-Fiction / Speculative Fiction</span><br>
+					• <strong data-i18n="meta_lang_label">Limba:</strong> <span data-i18n="meta_lang_val">Română</span>
+				</div>
+
+				<!-- Secțiunea Personaje (Grilă de Carduri Mărită / Extensibilă) -->
+				<h3 data-i18n="book_characters_title">Personaje principale</h3>
+				
+				<div class="characters-grid">
+					<!-- Personaje cu descrieri/roluri dedicate -->
+					<div class="char-card highlight full-width">
+						<span class="char-name">Jack Umblat</span>
+						<p class="char-desc" data-i18n="char_jack_desc">personajul pe care îl vei descoperi pe parcursul cărții.</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Alan Blackbird</span>
+						<p class="char-desc" data-i18n="char_alan_role">Jurnalist</p>
+					</div>
+					
+					<div class="char-card">
+						<span class="char-name">Eric</span>
+						<p class="char-desc" data-i18n="char_eric_role">Sim</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Aal</span>
+						<p class="char-desc" data-i18n="char_aal_role">Strateg</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Varias</span>
+						<p class="char-desc" data-i18n="char_varias_role">Șeftant</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Hart</span>
+						<p class="char-desc" data-i18n="char_hart_role">Șeftant</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Keenzo</span>
+						<p class="char-desc" data-i18n="char_keenzo_role">Președinte</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Gaau</span>
+						<p class="char-desc" data-i18n="char_gaau_role">Probator</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Storaan</span>
+						<p class="char-desc" data-i18n="char_storaan_role">Șeftant</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Riin</span>
+						<p class="char-desc" data-i18n="char_riin_role">Gardian</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Tim</span>
+						<p class="char-desc" data-i18n="char_tim_role">Lider Coordonator</p>
+					</div>
+
+					<div class="char-card">
+						<span class="char-name">Neel</span>
+						<p class="char-desc" data-i18n="char_neel_role">Șeftant</p>
+					</div>
+				</div>
+
+				<!-- Alte personaje secundare -->
+				<div class="other-characters-box">
+					<strong style="color: var(--text-primary); font-size: 0.9rem;" data-i18n="other_chars_label">Alte personaje:</strong>
+					<p class="other-characters-list">
+						Aala, Aapo, Adee, Alice, Andra Sorescu, Ankee, Aarni, Arne, Avaaro, Bard, Bataar, Bilguun, Bonde, Callum, Cathe, Daarna, Dr. Robbinson, Jaai, John, Kaan, Lavii, Leonid Aman, Louis, Maarl, Maart, Michael Schmidt, Muubac, Naan, One, Ovii, Oya, Piia, Raa, Raal, Ryaan, Sim, Steei, Torsaa, Vigmuund.
+					</p>
+				</div>
+
+				<!-- Casetă Verificare Autenticitate (fără mențiuni Amazon) -->
+				<div class="official-verification-box">
+					<div>
+						<i class="fas fa-user-check" style="color: var(--accent); margin-right: 0.5rem;"></i>
+						<strong data-i18n="auth_note_title">Notă de Autenticitate:</strong>
+					</div>
+					<p style="margin: 0.5rem 0 1rem 0;" data-i18n="auth_note_desc">
+						Aceasta este pagina oficială menținută direct de autorul Ștefan Nistea.
+					</p>
+					<div class="contact-card email-reveal-card" id="email-card">
+						<i class="fas fa-envelope contact-icon"></i>
+						<span id="email-container" class="protected-link" data-u="stefannistea" data-d="outlook.com">
+							<button onclick="revealEmail(this)" class="btn-reveal-custom" data-i18n="btn_reveal_email">
+								Afișează email
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ștefan Nistea. <span data-i18n="footer_rights">Toate drepturile rezervate.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
