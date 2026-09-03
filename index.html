@@ -77,7 +77,7 @@
                             <div>
                                 <h4 class="role" data-i18n="role_integration">System Integration Engineer</h4>
                             </div>
-                            <span class="period" data-i18n="period_integration">2026 - Prezent</span>
+                            <span class="period" data-i18n="period_integration">Aug 2026 - Prezent</span>
                         </div>
                         <div class="card-body">
                             <div class="clean-list">
@@ -110,7 +110,7 @@
                             <div>
                                 <h4 class="role" data-i18n="role_software">Software Engineer</h4>
                             </div>
-                            <span class="period" data-i18n="period_software">Iun 2021 - 2026</span>
+                            <span class="period" data-i18n="period_software">Iun 2021 - Aug 2026</span>
                         </div>
                         <div class="card-body">
                             <div class="clean-list">
@@ -186,35 +186,115 @@
     </section>
 
     <!-- Secțiunea Educație -->
-    <section id="education" class="container">
-        <h2 class="section-title" data-i18n="title_education">Educație</h2>
-        <div class="cards-wrapper">
-            <div class="cv-card">
-                <div class="card-header">
-                    <div>
-                        <h3 class="role" data-i18n="edu_degree">Diplomă de Licență</h3>
-                        <h4 class="company" data-i18n="edu_univ">Universitatea Tehnică din Cluj-Napoca</h4>
-                    </div>
-                    <span class="period">2016 - 2020</span>
-                </div>
-                <div class="card-body">
-                    <p class="description" data-i18n="edu_desc">
-                        Facultatea de Electronică, Telecomunicații și Tehnologia Informației<br>Specializarea: Tehnologii și Sisteme de Telecomunicații
-                    </p>
-                </div>
-            </div>
+    <!-- Secțiunea Educație & Certificări -->
+	<section id="education" class="container">
+		<h2 class="section-title" data-i18n="title_education">Educație & Certificări</h2>
+		
+		<!-- Licență -->
+		<div class="cv-card highlight">
+			<div class="card-header">
+				<div>
+					<h3 class="role" data-i18n="edu_degree">Diplomă de Licență</h3>
+					<h4 class="company" data-i18n="edu_univ">Universitatea Tehnică din Cluj-Napoca</h4>
+				</div>
+				<span class="period">2016 - 2020</span>
+			</div>
+			<div class="card-body">
+				<p class="description" data-i18n="edu_desc">
+					Facultatea de Electronică, Telecomunicații și Tehnologia Informației<br>
+					Specializarea: Tehnologii și Sisteme de Telecomunicații
+				</p>
 
-            <div class="cv-card">
-                <div class="card-header">
-                    <div>
-                        <h3 class="role" data-i18n="edu_hs">Liceu</h3>
-                        <h4 class="company" data-i18n="edu_hs_name">Colegiul Național "Titu Maiorescu" Aiud</h4>
-                    </div>
-                    <span class="period">2010 - 2014</span>
-                </div>
-            </div>
-        </div>
-    </section>
+				<!-- Separator vizual elegant -->
+				<div class="edu-divider"></div>
+
+				<!-- Tehnologii Cheie (Cu tag-uri și iconițe) -->
+				<div class="edu-section-block">
+					<h5 class="edu-block-title" data-i18n="edu_tech_label">Tehnologii Cheie</h5>
+					<div class="cert-tags">
+						<span class="project-tag"><i class="fas fa-microchip"></i> MATLAB</span>
+						<span class="project-tag"><i class="fas fa-project-diagram"></i> Simulink</span>
+						<span class="project-tag"><i class="fas fa-code"></i> C++</span>
+						<span class="project-tag"><i class="fab fa-python"></i> Python</span>
+						<span class="project-tag"><i class="fas fa-terminal"></i> Shell Scripting</span>
+					</div>
+				</div>
+
+				<!-- Discipline Cheie (Pliabil / Accordion) -->
+				<div class="edu-section-block">
+					<h5 class="edu-block-title" data-i18n="edu_topics_label">Domenii & Discipline Cheie</h5>
+					
+					<div class="cert-tags">
+						<!-- Primele 5 vizibile permanent -->
+						<span class="project-tag highlight" data-i18n="subject_electrotechnics">Bazele Electrotehnicii</span>
+						<span class="project-tag highlight" data-i18n="subject_applied_electronics">Electronică Aplicată</span>
+						<span class="project-tag highlight" data-i18n="subject_measurements">Măsurări în Electronică</span>
+						<span class="project-tag" data-i18n="subject_digital_circuits">Circuite Integrate Digitale</span>
+						<span class="project-tag highlight" data-i18n="subject_analog_circuits">Circuite Integrate Analogice</span>
+						
+						<!-- Zone pliabilă -->
+						<div id="more-subjects" class="hidden-subjects">
+							<span class="project-tag" data-i18n="subject_circuit_theory">Teoria Circuitelor Electrice</span>
+							<span class="project-tag" data-i18n="subject_optoelectronics">Optoelectronică</span>
+							<span class="project-tag" data-i18n="subject_modulation">Tehnici de Modulații</span>
+							<span class="project-tag" data-i18n="subject_mobile_comms">Comunicații Mobile</span>
+							<span class="project-tag" data-i18n="subject_switching_routing">Sisteme de Comutație și Rutare</span>
+							<span class="project-tag" data-i18n="subject_computer_networks">Rețele de Calculatoare</span>
+							<span class="project-tag" data-i18n="subject_internet_protocols">Protocoale pentru Internet</span>
+							<span class="project-tag" data-i18n="subject_dsp">Prelucrarea Digitală a Semnalelor</span>
+							<span class="project-tag highlight" data-i18n="subject_microprocessors">Sisteme cu Microprocesoare</span>
+							<span class="project-tag" data-i18n="subject_cellular_radio">Radiocomunicații Celulare</span>
+							<span class="project-tag" data-i18n="subject_mobile_comms">Comunicații Mobile</span>
+							<span class="project-tag" data-i18n="subject_financial_mgmt">Managementul Financiar al Firmei</span>
+						</div>
+					</div>
+
+					<button onclick="toggleSubjects(this)" class="btn-toggle-subjects">
+						<span data-i18n="btn_show_more">Afișează toate disciplinele</span> <i class="fas fa-chevron-down"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cursuri & Certificări -->
+		<h3 class="subsection-title" data-i18n="title_certifications">Certificări & Cursuri</h3>
+
+		<div class="projects-grid">
+			<!-- Card 1 -->
+			<div class="project-card">
+				<div>
+					<div class="project-header">
+						<h3>Version Control with Git</h3>
+						<span class="project-tag">Atlassian | Coursera</span>
+					</div>
+					<div class="cert-tags">
+						<span class="project-tag">Git</span>
+						<span class="project-tag">Version Control</span>
+					</div>
+				</div>
+				<a href="https://coursera.org/share/6d363373e55d5530d8b875b245ea890b" target="_blank" class="project-link">
+					<i class="fas fa-external-link-alt"></i> <span data-i18n="btn_view_cert">Vezi Certificat</span>
+				</a>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="project-card">
+				<div>
+					<div class="project-header">
+						<h3>Introduction to Git and GitHub</h3>
+						<span class="project-tag">Google | Coursera</span>
+					</div>
+					<div class="cert-tags">
+						<span class="project-tag">GitHub</span>
+						<span class="project-tag">Open Source</span>
+					</div>
+				</div>
+				<a href="https://coursera.org/share/dff285f6eef2b806a70be4ae87772e29" target="_blank" class="project-link">
+					<i class="fas fa-external-link-alt"></i> <span data-i18n="btn_view_cert">Vezi Certificat</span>
+				</a>
+			</div>
+		</div>
+	</section>
 
     <!-- Secțiunea Proiecte -->
     <section id="projects" class="container">

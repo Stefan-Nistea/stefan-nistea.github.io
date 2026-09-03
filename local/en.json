@@ -14,7 +14,7 @@
 	"title_experience": "Professional Experience",
 	"company_porsche": "Porsche Engineering Romania",
 	"role_integration": "System Integration Engineer",
-	"period_integration": "2026 - Present",
+	"period_integration": "Aug 2026 - Present",
 	"integ_task_1": "Technical support and active collaboration across international engineering projects.",
 	"integ_task_2": "Analysis, diagnosis, and resolution of complex system-level issues.",
 	"integ_task_3": "Verification and optimization of end-to-end integration between software and hardware subsystems.",
@@ -23,7 +23,7 @@
 	"badge_promotion": "Promotion",
 
 	"role_software": "Software Engineer",
-	"period_software": "Jun 2021 - 2026",
+	"period_software": "Jun 2021 - Aug 2026",
 	"sw_task_1": "Develop, implement, test, and evaluate new software technologies.",
 	"sw_task_2": "Design and develop model-based software components using <strong>Matlab / Simulink / Stateflow</strong>.",
 	"sw_task_3": "Perform software implementation (scaling, code generation, validation) and automated testing to improve efficiency.",
@@ -140,6 +140,30 @@
 	"char_riin_role": "Guardian",
 	"char_tim_role": "Coordinating Leader",
 	"char_neel_role": "Chieftain",
-	"other_chars_label": "Other characters:"
-  
+	"other_chars_label": "Other characters:",
+	
+	"title_education": "Education & Certifications",
+	"title_certifications": "Certifications & Courses",
+	"btn_view_cert": "View Certificate",
+	"btn_show_more": "Show all subjects",
+	"edu_tech_label": "Key Technologies",
+	"edu_topics_label": "Key Domains & Subjects",
+	
+	"subject_electrotechnics": "Fundamentals of Electrical Engineering",
+	"subject_applied_electronics": "Applied Electronics",
+	"subject_measurements": "Electronic Measurements",
+	"subject_circuit_theory": "Electrical Circuit Theory",
+	"subject_optoelectronics": "Optoelectronics",
+	"subject_digital_circuits": "Digital Integrated Circuits",
+	"subject_analog_circuits": "Analog Integrated Circuits",
+	"subject_microprocessors": "Microprocessor Systems",
+	"subject_modulation": "Modulation Techniques",
+	"subject_switching_routing": "Switching and Routing Systems",
+	"subject_computer_networks": "Computer Networks",
+	"subject_internet_protocols": "Internet Protocols",
+	"subject_dsp": "Digital Signal Processing",
+	"subject_cellular_radio": "Cellular Radio Communications",
+	"subject_mobile_comms": "Mobile Communications",
+	"subject_financial_mgmt": "Financial Management"
+ 
 }

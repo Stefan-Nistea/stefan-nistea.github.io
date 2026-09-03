@@ -367,6 +367,170 @@ a.contact-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
 
+
+/* Stiluri adăugate pentru Secțiunea Educație & Certificări */
+
+.skills-used {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent);
+    background-color: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 6px;
+}
+
+.subsection-title {
+    margin: 2rem 0 1.2rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.4rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.cert-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.cert-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.cert-issuer {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.cert-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.subsection-title {
+    margin: 2.5rem 0 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+/* Separator discret între descrierea facultății și skill-uri */
+.edu-divider {
+    height: 1px;
+    background: linear-gradient(to right, rgba(56, 189, 248, 0.3), rgba(255, 255, 255, 0.05));
+    margin: 1.5rem 0 1.2rem 0;
+}
+
+.edu-section-block {
+    margin-bottom: 1.2rem;
+}
+
+/* Titlu mai bine diferențiat pentru sub-secțiuni */
+.edu-block-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+}
+
+/* Iconițe în interiorul tag-urilor */
+.project-tag i {
+    margin-right: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+/* Evidențiere pentru disciplinele de top */
+.project-tag.highlight {
+    border-color: rgba(56, 189, 248, 0.35);
+    background-color: rgba(56, 189, 248, 0.12);
+}
+
+/* Logica de Pliere (Accordion) */
+.hidden-subjects {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.hidden-subjects.show {
+    display: flex;
+}
+
+.btn-toggle-subjects {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s ease;
+}
+
+.btn-toggle-subjects:hover {
+    color: var(--accent);
+}
+
 @media (max-width: 768px) {
     .card-header {
         flex-direction: column;

@@ -69,3 +69,17 @@ function revealPhone(button) {
     
     container.innerHTML = `<a href="tel:${cleanNumber}" class="contact-link">${fullNumber}</a>`;
 }
+
+function toggleSubjects(button) {
+    const container = document.getElementById('more-subjects');
+    const isShowing = container.classList.contains('show');
+    
+    container.classList.toggle('show');
+    
+    const icon = button.querySelector('i');
+    if (isShowing) {
+        icon.className = 'fas fa-chevron-down';
+    } else {
+        icon.className = 'fas fa-chevron-up';
+    }
+}

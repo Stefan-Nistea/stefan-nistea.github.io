@@ -14,7 +14,7 @@
 	"title_experience": "Experiență Profesională",
 	"company_porsche": "Porsche Engineering Romania",
 	"role_integration": "System Integration Engineer",
-	"period_integration": "2026 - Prezent",
+	"period_integration": "Aug 2026 - Prezent",
 	"integ_task_1": "Suport tehnic de specialitate și colaborare activă în cadrul proiectelor internaționale.",
 	"integ_task_2": "Analiza, diagnosticarea și soluționarea problemelor complexe la nivel de sistem.",
 	"integ_task_3": "Verificarea și optimizarea integrării end-to-end între subsistemele software și hardware.",
@@ -23,7 +23,7 @@
 	"badge_promotion": "Promovare",
 
 	"role_software": "Software Engineer",
-	"period_software": "Iun 2021 - 2026",
+	"period_software": "Iun 2021 - Aug 2026",
 	"sw_task_1": "Dezvoltare, implementare și evaluare de noi tehnologii software.",
 	"sw_task_2": "Proiectare și dezvoltare de componente software model-based folosind <strong>Matlab / Simulink / Stateflow</strong>.",
 	"sw_task_3": "Implementare software (scaling, generare de cod, validare) și automatizarea testării pentru optimizarea eficienței.",
@@ -140,6 +140,30 @@
 	"char_riin_role": "Gardian",
 	"char_tim_role": "Lider Coordonator",
 	"char_neel_role": "Șeftant",
-	"other_chars_label": "Alte personaje:"
+	"other_chars_label": "Alte personaje:",
+	
+	"title_education": "Educație & Certificări",
+	"title_certifications": "Certificări & Cursuri",
+	"btn_view_cert": "Vezi Certificat",
+	"btn_show_more": "Afișează toate disciplinele",
+	"edu_tech_label": "Tehnologii Cheie",
+	"edu_topics_label": "Domenii & Discipline Cheie",
+	
+	"subject_electrotechnics": "Bazele Electrotehnicii",
+	"subject_applied_electronics": "Electronică Aplicată",
+	"subject_measurements": "Măsurări în Electronică",
+	"subject_circuit_theory": "Teoria Circuitelor Electrice",
+	"subject_optoelectronics": "Optoelectronică",
+	"subject_digital_circuits": "Circuite Integrate Digitale",
+	"subject_analog_circuits": "Circuite Integrate Analogice",
+	"subject_microprocessors": "Sisteme cu Microprocesoare",
+	"subject_modulation": "Tehnici de Modulații",
+	"subject_switching_routing": "Sisteme de Comutație și Rutare",
+	"subject_computer_networks": "Rețele de Calculatoare",
+	"subject_internet_protocols": "Protocoale pentru Internet",
+	"subject_dsp": "Prelucrarea Digitală a Semnalelor",
+	"subject_cellular_radio": "Radiocomunicații Celulare",
+	"subject_mobile_comms": "Comunicații Mobile",
+	"subject_financial_mgmt": "Managementul Financiar al Firmei"
 
 }
